@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3 Column with 2x2 Grid</title>
+  <style>
+    .container {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+    }
+    .column {
+      flex: 1;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background: #f9f9f9;
+      padding: 15px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* 2 columns */
+      gap: 10px;
+    }
+    .item {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Column 1 -->
+    <div class="column">
+      <h3>Revamp your home</h3>
+      <div class="grid">
+        <div class="item">Cushion covers</div>
+        <div class="item">Figurines</div>
+        <div class="item">Home storage</div>
+        <div class="item">Lighting</div>
+      </div>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="column">
+      <h3>Appliances</h3>
+      <div class="grid">
+        <div class="item">Air conditioners</div>
+        <div class="item">Refrigerators</div>
+        <div class="item">Microwaves</div>
+        <div class="item">Washing machines</div>
+      </div>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="column">
+      <h3>Headphones</h3>
+      <div class="grid">
+        <div class="item">boAt</div>
+        <div class="item">Boult</div>
+        <div class="item">Noise</div>
+        <div class="item">Zebronics</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
